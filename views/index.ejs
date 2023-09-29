@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hanamoa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./locomotive/locomotive-scroll.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nav">
+      <div class="logo">
+        <svg
+          viewBox="0 0 205 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="nav_svg_path1"
+            d="M30.2712 24.5522H32.593L36.7531 28.7271L40.9133 24.5522H43.2351V36H40.9133V27.7676L36.7531 31.7739L32.593 27.7676V36H30.2712V24.5522Z"
+          />
+          <path
+            class="nav_svg_path2"
+            d="M68.6231 24.5522H71.0841L76.6212 36H74.1822L73.2667 34.0737H66.5797L65.6935 36H63.2472L68.6231 24.5522ZM72.3512 32.1621L69.8756 26.9619L67.4659 32.1621H72.3512Z"
+          />
+          <path
+            class="nav_svg_path3"
+            d="M95.8423 30.1699C95.8423 29.3643 95.9937 28.6123 96.2964 27.9141C96.5991 27.2109 97.041 26.6006 97.6221 26.083C98.2031 25.5654 98.916 25.1577 99.7607 24.8599C100.61 24.562 101.582 24.4131 102.676 24.4131C103.071 24.4131 103.467 24.4351 103.862 24.479C104.263 24.5181 104.656 24.5815 105.042 24.6694C105.432 24.7573 105.811 24.8696 106.177 25.0063C106.548 25.1382 106.899 25.2969 107.231 25.4824L106.162 27.2402C105.962 27.123 105.735 27.0181 105.481 26.9253C105.227 26.8276 104.954 26.7471 104.661 26.6836C104.373 26.6152 104.072 26.564 103.76 26.5298C103.452 26.4956 103.142 26.4785 102.83 26.4785C102.107 26.4785 101.462 26.5713 100.896 26.7568C100.33 26.9375 99.8511 27.1938 99.4604 27.5259C99.0698 27.853 98.772 28.2461 98.5669 28.7051C98.3618 29.1641 98.2593 29.667 98.2593 30.2139C98.2593 30.7803 98.3667 31.3003 98.5815 31.7739C98.7964 32.2476 99.1016 32.6553 99.4971 32.9971C99.8926 33.3389 100.371 33.6074 100.933 33.8027C101.494 33.9932 102.122 34.0884 102.815 34.0884C103.367 34.0884 103.872 34.0273 104.331 33.9053C104.79 33.7783 105.19 33.6001 105.532 33.3706C105.874 33.1411 106.152 32.8652 106.367 32.543C106.582 32.2158 106.724 31.8496 106.792 31.4443H102.793V29.5327H108.879V29.54L108.887 29.5327C109.009 30.1187 109.045 30.6899 108.997 31.2466C108.953 31.7983 108.826 32.3208 108.616 32.814C108.411 33.3022 108.127 33.7515 107.766 34.1616C107.405 34.5718 106.973 34.9258 106.47 35.2236C105.967 35.5166 105.396 35.7461 104.756 35.9121C104.116 36.0732 103.416 36.1538 102.654 36.1538C101.589 36.1538 100.635 35.9976 99.79 35.6851C98.9502 35.3726 98.2373 34.9453 97.6514 34.4033C97.0654 33.8613 96.6162 33.2266 96.3037 32.499C95.9961 31.7715 95.8423 30.9951 95.8423 30.1699Z"
+          />
+          <path
+            class="nav_svg_path4"
+            d="M129.858 24.5522H132.18L136.34 28.7271L140.5 24.5522H142.822V36H140.5V27.7676L136.34 31.7739L132.18 27.7676V36H129.858V24.5522Z"
+          />
+          <path
+            class="nav_svg_path5"
+            d="M168.21 24.5522H170.671L176.208 36H173.769L172.854 34.0737H166.167L165.281 36H162.834L168.21 24.5522ZM171.938 32.1621L169.463 26.9619L167.053 32.1621H171.938Z"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M204 1H1V59H204V1ZM0 0V60H205V0H0Z"
+          />
+        </svg>
+      </div>
+      <div class="nav_but">
+        <button class="but1">
+          <div><%=name%> Book A Demo</div>
+        </button>
+        <button class="but2"></button>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="sidebar_content">
+        <div class="sidebar_top">
+          <div class="sidebar_link1">
+            <a href="#">Product</a>
+          </div>
+          <div class="sidebar_link2">
+            <a href="#">Mission</a>
+          </div>
+          <div class="sidebar_link3">
+            <a href="#">Blog</a>
+          </div>
+          <div class="sidebar_link4">
+            <a href="#">FAQ</a>
+          </div>
+          <div class="sidebar_link5">
+            <a href="#">Content</a>
+          </div>
+        </div>
+        <div class="sidebar_bottom">
+          <div class="sidebar_twitter">
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F"
+              >Twitter</a
+            >
+          </div>
+          <div class="sidebar_linkedin">
+            <a href="https://www.linkedin.com/">Linkedin</a>
+          </div>
+          <div class="sidebar_instagram">
+            <a href="https://www.linkedin.com/">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="main_logo">
+        <svg
+          viewBox="0 0 205 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="nav_svg_path1"
+            d="M30.2712 24.5522H32.593L36.7531 28.7271L40.9133 24.5522H43.2351V36H40.9133V27.7676L36.7531 31.7739L32.593 27.7676V36H30.2712V24.5522Z"
+          />
+          <path
+            class="nav_svg_path2"
+            d="M68.6231 24.5522H71.0841L76.6212 36H74.1822L73.2667 34.0737H66.5797L65.6935 36H63.2472L68.6231 24.5522ZM72.3512 32.1621L69.8756 26.9619L67.4659 32.1621H72.3512Z"
+          />
+          <path
+            class="nav_svg_path3"
+            d="M95.8423 30.1699C95.8423 29.3643 95.9937 28.6123 96.2964 27.9141C96.5991 27.2109 97.041 26.6006 97.6221 26.083C98.2031 25.5654 98.916 25.1577 99.7607 24.8599C100.61 24.562 101.582 24.4131 102.676 24.4131C103.071 24.4131 103.467 24.4351 103.862 24.479C104.263 24.5181 104.656 24.5815 105.042 24.6694C105.432 24.7573 105.811 24.8696 106.177 25.0063C106.548 25.1382 106.899 25.2969 107.231 25.4824L106.162 27.2402C105.962 27.123 105.735 27.0181 105.481 26.9253C105.227 26.8276 104.954 26.7471 104.661 26.6836C104.373 26.6152 104.072 26.564 103.76 26.5298C103.452 26.4956 103.142 26.4785 102.83 26.4785C102.107 26.4785 101.462 26.5713 100.896 26.7568C100.33 26.9375 99.8511 27.1938 99.4604 27.5259C99.0698 27.853 98.772 28.2461 98.5669 28.7051C98.3618 29.1641 98.2593 29.667 98.2593 30.2139C98.2593 30.7803 98.3667 31.3003 98.5815 31.7739C98.7964 32.2476 99.1016 32.6553 99.4971 32.9971C99.8926 33.3389 100.371 33.6074 100.933 33.8027C101.494 33.9932 102.122 34.0884 102.815 34.0884C103.367 34.0884 103.872 34.0273 104.331 33.9053C104.79 33.7783 105.19 33.6001 105.532 33.3706C105.874 33.1411 106.152 32.8652 106.367 32.543C106.582 32.2158 106.724 31.8496 106.792 31.4443H102.793V29.5327H108.879V29.54L108.887 29.5327C109.009 30.1187 109.045 30.6899 108.997 31.2466C108.953 31.7983 108.826 32.3208 108.616 32.814C108.411 33.3022 108.127 33.7515 107.766 34.1616C107.405 34.5718 106.973 34.9258 106.47 35.2236C105.967 35.5166 105.396 35.7461 104.756 35.9121C104.116 36.0732 103.416 36.1538 102.654 36.1538C101.589 36.1538 100.635 35.9976 99.79 35.6851C98.9502 35.3726 98.2373 34.9453 97.6514 34.4033C97.0654 33.8613 96.6162 33.2266 96.3037 32.499C95.9961 31.7715 95.8423 30.9951 95.8423 30.1699Z"
+          />
+          <path
+            class="nav_svg_path4"
+            d="M129.858 24.5522H132.18L136.34 28.7271L140.5 24.5522H142.822V36H140.5V27.7676L136.34 31.7739L132.18 27.7676V36H129.858V24.5522Z"
+          />
+          <path
+            class="nav_svg_path5"
+            d="M168.21 24.5522H170.671L176.208 36H173.769L172.854 34.0737H166.167L165.281 36H162.834L168.21 24.5522ZM171.938 32.1621L169.463 26.9619L167.053 32.1621H171.938Z"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M204 1H1V59H204V1ZM0 0V60H205V0H0Z"
+          />
+        </svg>
+      </div>
+      <div data-scroll data-scroll-speed="-5" id="page1">
+        <video
+          class="page1_comm"
+          src="./pics/1.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <div class="page1_comm">
+          <div class="page1_shell">
+            <h1>
+              Experience Real <br />
+              Estate Agility
+            </h1>
+            <div>
+              <h3>
+                Create a digital twin of your existing building <br />
+                and release the potential of Web3.
+              </h3>
+              <button class="but1">
+                <div>Learn More</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page2">
+        <h3>CERTIFY YOUR BUILDING AS A DIGITAL TWIN TOKEN (DTT®)</h3>
+        <h1>
+          The Digital Twin Token is a unique digital asset backed by property
+          data. Magma combines your building’s components and systems essential
+          information into a DTT®.
+        </h1>
+      </div>
+      <div id="page3">
+        <canvas></canvas>
+      </div>
+      <div id="page4">
+        <h3>CONNECT THE BUILDING'S TWIN TO YOUR STAKEHOLDERS</h3>
+        <h1>
+          Users connect directly to the DTT without any intermediaries. As
+          Stakeholder, they have the power to upload and verify information that
+          enriches the Digital Twin Token. A Stakeholder's ability to access
+          validated-data to perform tasks depends on their specific role.
+        </h1>
+      </div>
+      <div id="page5">
+        <canvas></canvas>
+      </div>
+      <div id="page6">
+        <h3>INCREASE YOUR DIGITAL TWIN TOKEN’S VALUE</h3>
+        <h1>
+          DTT data increases the value of your digital asset by lowering
+          operational costs, improving energy use, assisting commercialization,
+          and boosting the liquidity of your building.
+        </h1>
+      </div>
+      <div id="page7">
+        <div class="page7_cir">
+          <div class="page7_cir_inner">
+            <img src="./pics/1.png" alt="" />
+          </div>
+        </div>
+        <canvas></canvas>
+      </div>
+      <div id="page8">
+        <div class="page8_bottom">
+          <div class="page8_txt_anim">
+            <h1>Magma DTT</h1>
+          </div>
+          <button><div>Learn More</div></button>
+        </div>
+        <video src="./pics/2.webm" autoplay loop muted></video>
+      </div>
+      <div id="page9">
+        <div class="left9">
+          <h1>
+            What is <br />
+            Magma?
+          </h1>
+        </div>
+        <div class="right9_supreme">
+          <div class="right9_top">
+            <img
+              class="right9_center"
+              src="https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="right9_bottom">
+            <div class="right9_inner">
+              <h1>Web3 platform</h1>
+              <p>
+                Magma is a Web3 platform for all real estate stakeholders, which
+                provides users with the ability to manage interactions between
+                physical and digital assets through unique, and collectively
+                generated, 3D representations of their buildings.
+              </p>
+            </div>
+            <div class="right9_inner">
+              <h1>
+                The Digital Twin Token: The building’s unique digital copy
+              </h1>
+              <p>
+                Magma uses blockchain technology to record essential data, which
+                enables transparent, traceable, and immutable streams of
+                information to be readily accessible to its users. Magma smart
+                contracts are built with this blockchain data to expedite tasks
+                like requests for proposals, lease agreements, and services
+                arrangements.
+              </p>
+            </div>
+            <div class="right9_inner">
+              <h1>An Index of digitization</h1>
+              <p>
+                The Magma Index provides valuable insight for decision-making
+                regarding data-sharing, service-creating, and
+                operational/environmental expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page10">
+        <div class="page10">
+          <div class="page10_top">
+            <h1>DTT Creation®</h1>
+          </div>
+          <div class="page10_bottom">
+            <div class="page10_left">
+              <div class="page10_01 page10_comm">
+                <p>01</p>
+                <h1>
+                  Invite your <br />
+                  building’s <br />
+                  Stakeholders
+                </h1>
+                <h2>
+                  Stakeholders connect directly to the DTT® <br />
+                  without any intermediaries.
+                </h2>
+              </div>
+              <div class="page10_02 page10_comm">
+                <p>02</p>
+                <h1>
+                  Upload and <br />
+                  validate contractual <br />
+                  and architectural data
+                </h1>
+                <h2>Each contribution is rewarded in tokens.</h2>
+              </div>
+              <div class="page10_03 page10_comm">
+                <p>03</p>
+                <h1>
+                  Mint your <br />
+                  building’s Digital <br />
+                  Twin Token
+                </h1>
+                <h2>Increase its Magma Index.</h2>
+              </div>
+              <div class="page10_04 page10_comm">
+                <p>04</p>
+                <h1>
+                  The Digital Twin is <br />
+                  up to date
+                </h1>
+                <h2>Add liquidity to your asset.</h2>
+              </div>
+            </div>
+            <div class="page10_right">
+              <canvas></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page11">
+        <h1>For All Stakeholders</h1>
+        <div class="page11_inline">
+          <div class="page11_1">
+            <div class="page11_img">
+              <img src="./pics/a1.jpg" alt="" />
+            </div>
+            <div class="page11_text">
+              <h2>Owner</h2>
+              <ul>
+                <li>Improve liquidity</li>
+                <li>Consolidate all the documentation in one place</li>
+                <li>Lower operating costs</li>
+                <li>Have a 360 and intuitive reproduction of your Building</li>
+                <li>Connect to Web3 with a wallet</li>
+                <li>Create digital value for the building (digital assets)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="page11_2">
+            <div class="page11_img">
+              <img src="./pics/a2.jpg" alt="" />
+            </div>
+            <div class="page11_text">
+              <h2>Asset Manager</h2>
+              <ul>
+                <li>Connect to Web3 with a wallet</li>
+                <li>Create digital value for the building</li>
+                <li>Monitor building performance</li>
+                <li>Manage access and rights to the digital model</li>
+                <li>Keep an operational data room with validated data</li>
+                <li>Keep an immutable record of Stakeholder’s activity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="page11_3">
+            <div class="page11_img">
+              <img src="./pics/a3.jpg" alt="" />
+            </div>
+            <div class="page11_text">
+              <h2>Property/Facility Manager</h2>
+              <ul>
+                <li>Record Service Providers activity</li>
+                <li>
+                  Monitor energy performance and manage carbon credit offsets
+                </li>
+                <li>Facilitate predictive maintenance</li>
+                <li>Integrate technology and new services</li>
+                <li>Improve recyclability of building parts and objects</li>
+                <li>Automate transactions and services to the building</li>
+              </ul>
+            </div>
+          </div>
+          <div class="page11_4">
+            <div class="page11_img">
+              <img src="./pics/a4.jpg" alt="" />
+            </div>
+            <div class="page11_text">
+              <h2>Service Provider</h2>
+              <ul>
+                <li>
+                  Any company providing services to a building can join Magma
+                </li>
+                <li>
+                  30+ categories of Service Providers: Accountant, Attorney,
+                  Broker, Consulting Firm, Diagnostician, Interior Designer,
+                  Plumber and more
+                </li>
+                <li>Showcase objects or services in the Magma Platform</li>
+                <li>Access the 3D model</li>
+                <li>Create 3D objects and increment the model</li>
+                <li>Earn tokens by uploading and validating documents</li>
+              </ul>
+            </div>
+          </div>
+          <div class="page11_5">
+            <div class="page11_img">
+              <img src="./pics/a5.jpg" alt="" />
+            </div>
+            <div class="page11_text">
+              <h2>Tenants</h2>
+              <ul>
+                <li>Earn tokens by uploading and validating documents</li>
+              </ul>
+            </div>
+          </div>
+          <div class="page11_6">
+            <div class="page11_img">
+              <img src="./pics/a6.jpg " alt="" />
+            </div>
+            <div class="page11_text">
+              <h2>Observer</h2>
+              <ul>
+                <li>Upload or access information upon authorization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page12">
+        <div class="page12_top">
+          <h1>Featured In</h1>
+          <h4>
+            Thrilled to have been featured in several prominent media <br />
+            outlets and leading professionals across the world’s best <br />
+            real estate and web3 institutions.
+          </h4>
+        </div>
+        <div class="page12_bottom">
+          <div class="page12_img1 page12_img_com">
+            <img src="./company_logo/1.png" alt="" />
+          </div>
+          <div class="page12_img2 page12_img_com">
+            <img src="./company_logo/2.png" alt="" />
+          </div>
+          <div class="page12_img3 page12_img_com">
+            <img src="./company_logo/3.png" alt="" />
+          </div>
+          <div class="page12_img4 page12_img_com">
+            <img src="./company_logo/4.png" alt="" />
+          </div>
+          <div class="page12_img5 page12_img_com">
+            <img src="./company_logo/5.png" alt="" />
+          </div>
+          <div class="page12_img6 page12_img_com">
+            <img src="./company_logo/6.png" alt="" />
+          </div>
+          <div class="page12_img7 page12_img_com">
+            <img src="./company_logo/7.png" alt="" />
+          </div>
+          <div class="page12_img8 page12_img_com">
+            <img src="./company_logo/1.png" alt="" />
+          </div>
+          <div class="page12_img9 page12_img_com">
+            <img src="./company_logo/2.png" alt="" />
+          </div>
+          <div class="page12_img10 page12_img_com">
+            <img src="./company_logo/3.png" alt="" />
+          </div>
+          <div class="page12_img11 page12_img_com">
+            <img src="./company_logo/4.png" alt="" />
+          </div>
+          <div class="page12_img12 page12_img_com">
+            <img src="./company_logo/5.png" alt="" />
+          </div>
+          <div class="page12_img13 page12_img_com">
+            <img src="./company_logo/6.png" alt="" />
+          </div>
+          <div class="page12_img14 page12_img_com">
+            <img src="./company_logo/7.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="page13">
+        <h1>
+          Become an <br />
+          early adopter
+        </h1>
+        <button>
+          <div class="t1">Book A Demo</div>
+          <div class="t2"></div>
+        </button>
+      </div>
+      <div id="page14">
+        <div class="page14_top">
+          <div class="page14_twitter">
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F">
+              <div class="page14_cont">
+                <h1>Twitter</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="page14_effect"></div>
+              </div>
+            </a>
+          </div>
+          <div class="page14_linkedin">
+            <a href="https://www.linkedin.com/">
+              <div class="page14_cont">
+                <h1>LinkedIn</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="page14_effect"></div>
+              </div>
+            </a>
+          </div>
+          <div class="page14_instagram">
+            <a href="https://www.instagram.com/">
+              <div class="page14_cont">
+                <h1>Instagram</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="page14_effect"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="page14_center">
+          <div class="page14_left">
+            <div class="page14_left_left">
+              <div class="page14_left_text1">
+                <h3>MISSION</h3>
+              </div>
+              <div class="page14_left_text2">
+                <h3>PRODUCT</h3>
+              </div>
+              <div class="page14_left_text3">
+                <h3>BLOG</h3>
+              </div>
+              <div class="page14_left_text4">
+                <h3>FAQ</h3>
+              </div>
+            </div>
+            <div class="page14_left_right">
+              <div class="page14_center_text1">
+                <h3>CONTACT</h3>
+              </div>
+              <div class="page14_center_text2">
+                <h3><span>PRIVACY POLICY</span></h3>
+              </div>
+              <div class="page14_left_text3">
+                <h3>TERMS</h3>
+              </div>
+            </div>
+          </div>
+          <div class="page14_right">
+            <div class="page14_right_text1">
+              <h2>SUBSCRIBE</h2>
+            </div>
+            <div class="page14_right_text2">
+              <input type="email" placeholder="  E-Mail" />
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="page14_bottom">
+          <h2>© GO AHEAD</h2>
+        </div>
+      </div>
+    </div>
+    <script src="./gsap/gsap.min.js"></script>
+    <script src="./gsap/ScrollTrigger.min.js"></script>
+    <script src="./gsap/CustomEase.min.js"></script>
+    <script src="./locomotive/locomotive-scroll.js"></script>
+    <script src="./locomotive/locomotive_gsap.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
