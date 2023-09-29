@@ -70,6 +70,11 @@ app.get("/:name" , (req , res)=>{
    
    
 })
+app.get("/" , (req , res)=>{
+   res.render("index" , {
+      name: "niaz"
+   })
+});
 app.get("/about/:id" , (req , res)=>{
    console.log(req.query);
    res.end("asdfaaa")
